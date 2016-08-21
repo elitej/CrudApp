@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="usersdata.model.UsersEntity" table="users" schema="test">
+        <id name="id">
+            <column name="id" sql-type="int(8)"/>
+        </id>
+        <property name="name">
+            <column name="name" sql-type="varchar(25)" length="25"/>
+        </property>
+        <property name="age">
+            <column name="age" sql-type="int(11)"/>
+        </property>
+        <property name="isAdmin">
+            <column name="isAdmin" sql-type="bit(1)"/>
+        </property>
+        <property name="createDate">
+            <column name="createDate" sql-type="timestamp"/>
+        </property>
+    </class>
+</hibernate-mapping>
