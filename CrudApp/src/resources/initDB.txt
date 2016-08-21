@@ -3,5 +3,5 @@ CREATE TABLE test.users (
   name VARCHAR(25) NOT NULL,
   age INT NOT NULL,
   isAdmin BIT NOT NULL,
-  createdDate TIMESTAMP NOT NULL,
+  createDate TIMESTAMP NOT NULL,
   PRIMARY KEY (ID));
